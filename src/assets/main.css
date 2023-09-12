@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-100;
+  overflow: hidden;
+}
+
+.bounce-btn {
+  border-radius: 100%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.12);
+  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.bounce-btn.bounce-btn-home:hover,
+.router-link-active .bounce-btn-home,
+.router-link-exact-active .bounce-btn-home {
+  border-radius: 25%;
+  background-color: rgba(131, 73, 255, 0.42);
+  cursor: pointer;
+}
+
+
+.bounce-btn.bounce-btn-home:hover .icon-home,
+.router-link-active .bounce-btn-home .icon-home,
+.router-link-exact-active .bounce-btn-home .icon-home {
+  color: rgba(131, 73, 255, 0.8);
+}
+
+.bounce-btn.bounce-btn-list:hover,
+.router-link-active .bounce-btn-list,
+.router-link-exact-active .bounce-btn-list {
+  border-radius: 25%;
+  background-color: rgba(225, 82, 165, 0.42);
+  cursor: pointer;
+}
+
+.bounce-btn.bounce-btn-list:hover .icon-list,
+.router-link-active .bounce-btn-list .icon-list,
+.router-link-exact-active .bounce-btn-list .icon-list {
+  color: rgba(225, 82, 165, 0.8);
+}
+
+.bounce-btn.bounce-btn-create:hover,
+.router-link-active .bounce-btn-create,
+.router-link-exact-active .bounce-btn-create {
+  border-radius: 25%;
+  background-color: rgba(83, 203, 255, 0.42);
+  cursor: pointer;
+}
+
+.bounce-btn.bounce-btn-create:hover .icon-create,
+.router-link-active .bounce-btn-create .icon-create,
+.router-link-exact-active .bounce-btn-create .icon-create {
+  color: rgba(83, 203, 255, 0.8)
+}
+
+.bounce-btn.bounce-btn-admin:hover,
+.router-link-active .bounce-btn-admin,
+.router-link-exact-active .bounce-btn-admin {
+  border-radius: 25%;
+  background-color: rgba(158, 255, 82, 0.42);
+  cursor: pointer;
+}
+
+.bounce-btn.bounce-btn-admin:hover .icon-admin,
+.router-link-active .bounce-btn-admin .icon-admin,
+.router-link-exact-active .bounce-btn-admin .icon-admin {
+  color: rgba(158, 255, 82, 0.8)
+}
+
+.bounce-btn.bounce-btn-account:hover,
+.router-link-active .bounce-btn-account,
+.router-link-exact-active .bounce-btn-account {
+  border-radius: 25%;
+  background-color: rgba(255, 204, 73, 0.42);
+  cursor: pointer;
+}
+
+.bounce-btn.bounce-btn-account:hover .icon-account,
+.router-link-active .bounce-btn-account .icon-account,
+.router-link-exact-active .bounce-btn-account .icon-account {
+  color: rgba(255, 204, 73, 0.8);
+}
